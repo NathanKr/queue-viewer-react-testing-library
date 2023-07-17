@@ -1,5 +1,4 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { test, expect, beforeEach } from "vitest";
 import Queue from "../src/components/queue";
 import React from "react";
 
