@@ -51,9 +51,7 @@ test("get all task select options", () => {
   expect(taskOptions.length).toBe(3);
 });
 
-test('second task selected is ok',()=>{
 
-})
 
 test.skip('click on Task2 --> appears in dom',()=>{
   let task2Elements = screen.queryAllByText("Task2");
