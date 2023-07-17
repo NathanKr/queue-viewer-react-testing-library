@@ -1,0 +1,8 @@
+.container button{
+    margin: 5px;
+}
+
+
+.container .queue_item{
+    font-weight: bold;
+}
