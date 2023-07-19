@@ -1,8 +1,73 @@
-.container button{
-    margin: 5px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc; /* Add a border style */
+  border-radius: 8px; /* Add border-radius for rounded corners */
 }
 
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
-.container .queue_item{
-    font-weight: bold;
+.button_container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style for buttons using CSS Modules */
+.button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for queue items using CSS Modules */
+.queue_item {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333; /* Set text color to a contrasting color */
+}
+
+.queue_item.inserted {
+  animation: highlightInserted 1s ease;
+}
+
+@keyframes highlightInserted {
+  from {
+    background-color: #98fb98;
+  }
+  to {
+    background-color: #f9f9f9;
+  }
+}
+
+.select_container {
+  margin-bottom: 20px;
+}
+
+.queue_status {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Update to make queue items display vertically */
+.queue_item_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
 }
